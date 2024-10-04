@@ -20,10 +20,10 @@ public class AddBatchEx {
 			Statement statement = connection.createStatement();
 			
 			// Adding SQL statements to batch (Inserting, Updating, Deleting)
-			statement.addBatch("INSERT INTO trainee (id, name, course_id, course_name, trainer_name) VALUES (8, 'Jaat', 801, 'Java Full Stack', 'rk')");
-			statement.addBatch("INSERT INTO trainee (id, name, course_id, course_name, trainer_name) VALUES (9, 'Surpnakha', 802, 'Python Full Stack', 'papparazi')");
-			statement.addBatch("UPDATE trainee SET trainer_name='R Krishna' WHERE id=8");
-			statement.addBatch("DELETE FROM trainee WHERE id=9");
+			statement.addBatch("INSERT INTO trainee (id, name, course_id, course_name, trainer_name) VALUES (10, 'Gujju', 801, 'Java Full Stack', 'rk')");
+			statement.addBatch("INSERT INTO trainee (id, name, course_id, course_name, trainer_name) VALUES (11, 'Suzie', 802, 'Python Full Stack', 'papparazi')");
+			statement.addBatch("UPDATE trainee SET trainer_name='R Krishna' WHERE id=10");
+			statement.addBatch("DELETE FROM trainee WHERE id=11");
 			
 			// Execute the batch of SQL statements
 			int[] result = statement.executeBatch();
